@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.android.citygallery.MainActivity"
+    android:orientation="vertical">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="City Gallery"
+        android:textSize="30sp"
+        android:textStyle="bold"
+        android:padding="5dp"
+        android:textColor="#FFFFFF"
+        android:background="#000000"
+        tools:ignore="HardcodedText"
+        android:layout_gravity="center"
+        android:id="@+id/text"/>
+
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Sign In"
+        tools:ignore="HardcodedText,RtlCompat"
+        android:background="#E1E1E1"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentBottom="true"
+        android:id="@+id/button"
+        android:layout_alignParentRight="true" />
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:src="@drawable/photo"
+        android:id="@+id/image"
+        android:scaleType="fitStart"
+        android:layout_below="@id/text"
+        tools:ignore="ContentDescription" />
+
+    <TextView
+        android:id="@+id/textView2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/button"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_marginBottom="70dp"
+        android:layout_marginLeft="19dp"
+        android:layout_marginStart="19dp"
+        android:textSize="16sp"
+        android:text="Contact us on;"
+        android:textColor="#0000ff"
+        tools:ignore="HardcodedText" />
+
+    <TextView
+        android:id="@+id/editText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/button"
+        android:layout_alignLeft="@+id/textView2"
+        android:layout_alignStart="@+id/textView2"
+        android:layout_marginBottom="18dp"
+        android:ems="10"
+        android:text="citygallery@gmail.co.ke"
+        tools:ignore="HardcodedText" />
+
+    <TextView
+        android:id="@+id/editText3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/editText"
+        android:layout_alignParentBottom="true"
+        android:layout_alignStart="@+id/editText"
+        android:layout_marginBottom="20dp"
+        android:ems="10"
+        android:text="511-10100, Moi Avenue"
+        tools:ignore="HardcodedText" />
+
+
+</RelativeLayout>
